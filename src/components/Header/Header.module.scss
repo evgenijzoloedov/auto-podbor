@@ -1,0 +1,151 @@
+.headerMobile {
+  display: none;
+}
+
+.headerDesktop {
+  display: block;
+}
+
+.headerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gray {
+  background: var(--header-bcg);
+}
+
+.topBar {
+  margin: 0 auto;
+  max-width: 1410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 8px 15px;
+}
+
+
+.menu {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 14px 0;
+}
+
+.container {
+  position: relative;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1070px) {
+
+  .headerDesktop {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+    padding-top: 15px;
+    .container {
+      width: 100%;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          display: flex;
+          flex-direction: row;
+          gap: 18px;
+          align-items: center;
+          .img {
+            width: 54px;
+            height: 48px;
+          }
+
+          .textContainer {
+            .text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 130%;
+              color: var(--gray-title);
+              margin-bottom: 0;
+            }
+
+            .link {
+              cursor: pointer;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 113.7%;
+              text-decoration-line: underline;
+              color: var(--orange);
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .headerWrapper{
+    z-index: -100;
+    min-height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    background: white;
+    top: 62px;
+    opacity: 0;
+    overflow-y: hidden;
+    transition: opacity 0.3s ease-in-out;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .menuTransition{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+
+  }
+  .animate{
+    opacity: 1;
+    z-index: 100;
+  }
+  .addressWait{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 27px 0 30px;
+  }
+  .nav{
+    margin-bottom: 20px;
+  }
+  .btn{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+  }
+}

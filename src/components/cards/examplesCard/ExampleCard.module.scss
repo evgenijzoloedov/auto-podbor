@@ -1,0 +1,113 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 11px 11px;
+  margin-bottom: 19px;
+}
+.img{
+  flex:1
+}
+.content{
+  flex: 1;
+  padding: 17px 29px 0;
+  background: rgba(119, 119, 119, 0.01);
+  //opacity: 0.7;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  backdrop-filter: blur(150px);
+  /* Note: backdrop-filter has minimal browser support */
+display: flex;
+  flex-direction: column;
+  border-radius:  11px ;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 129.7%;
+  color: var(--white);
+
+}
+
+.subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  color: var(--white);
+}
+
+.prices{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #7B7B7B;
+}
+
+.text{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 113.7%;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.textBold{
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 113.7%;
+  color: var(--white);
+  margin-bottom: 10px;
+
+}
+
+
+.small{
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.texts{
+  flex:2;
+}
+.mb0{
+  margin-bottom: 0;
+}
+.button{
+  color: var(--white);
+  flex:1;
+  height: 100%;
+  min-height: 44px;
+  max-height: 44px;
+}
+
+
+@media screen and (max-width: 768px){
+  .card{
+    flex-direction: column;
+  }
+
+  .small{
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,1 @@
+export {WhyCard} from './WhyCard'

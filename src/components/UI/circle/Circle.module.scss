@@ -1,0 +1,20 @@
+.circle{
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textInner{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 129.7%;
+  color: var(--gray-primary);
+}

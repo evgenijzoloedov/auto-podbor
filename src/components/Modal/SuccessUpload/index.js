@@ -1,0 +1,1 @@
+export {SuccessUpload} from './SuccessUpload'

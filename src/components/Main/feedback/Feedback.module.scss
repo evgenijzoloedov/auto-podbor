@@ -1,0 +1,140 @@
+.bck{
+  width: 100%;
+  background: black;
+  padding:100px 0;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 68px;
+}
+
+.container{
+  max-width: 1365px;
+  padding:0 15px ;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.socialItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+.text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 129.7%;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.underline{
+  text-decoration: underline;
+  color: white;
+}
+
+.red{
+  width: 300px;
+  height: 300px;
+  background: red;
+}
+
+.btnWrapper{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  min-height: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 113%;
+  /* or 17px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding:0 10px;
+  color: #121212;
+}
+
+
+.review{
+  cursor: pointer;
+}
+.sliderWrapper{
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.phoneButton{
+  position: relative;
+  .link{
+    position: absolute;
+    bottom: 10%;
+    left:13%
+  }
+}
+
+.mapWrapper{
+  position: relative;
+  overflow: hidden;
+}
+.map{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+@media screen  and (max-width: 800px){
+  .map{
+    display: none;
+  }
+  .social{
+    flex-direction: column;
+    gap:30px;
+
+  }
+  .container{
+    margin-bottom: 40px;
+  }
+}
+
+@media screen  and (max-width: 576px){
+  .socialItem{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social{
+    align-items: flex-start;
+  }
+  .container{
+    margin-bottom: 40px;
+  }
+}

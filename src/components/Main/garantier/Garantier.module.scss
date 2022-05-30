@@ -1,0 +1,141 @@
+.wrapper{
+  max-width: 854px;
+  width: 100% ;
+  margin:0 auto;
+  padding: 0 16px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //align-items: center;
+  gap:70px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(119, 119, 119, 0.01);
+  padding: 67px 25px 100px;
+  //opacity: 0.7;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  backdrop-filter: blur(150px);
+  border-radius: 11px;
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+
+
+.isPay{
+  padding: 9px 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 11px 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+  text-align: center;
+  color: #121212;
+  &.white{
+    background: #FFFFFF;
+  }
+  &.yellow{
+    background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  }
+}
+
+.textContent{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  .bold{
+    font-weight: 800;
+  }
+  .yellow{
+    background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+
+.bigText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #FFFFFF;
+  .bold{
+    font-weight: 600;
+  }
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  padding: 0 7px;
+  margin-right: 15px;
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  border-radius: 50%;
+}
+.smallText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+}
+.letter{
+  z-index: 0;
+  position: absolute;
+  bottom: -70px;
+  width: 110%;
+
+}
+@media screen and (max-width: 768px){
+  .content{
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+  .letter{
+    width: 110%;
+  }
+  .card{
+    //max-width: 98%;
+    width: 100%;
+    background: url('../../../assets/images/garant/garan.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+}

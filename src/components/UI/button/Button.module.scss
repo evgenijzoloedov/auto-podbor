@@ -1,0 +1,12 @@
+.btn{
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  border-radius: 5px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  &:hover{
+    background: linear-gradient(180deg, #FC8B26 0%, #FCC026 100%);
+    text-decoration:underline;
+  }
+}

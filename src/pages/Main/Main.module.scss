@@ -1,0 +1,50 @@
+.back{
+  position: relative;
+  z-index: 5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.garantier{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.orangeSquare{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bcg{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .garantier{
+    display: none;
+  }
+  .back{
+    overflow-x: hidden;
+  }
+  .orangeSquare{
+    display: none;
+  }
+}

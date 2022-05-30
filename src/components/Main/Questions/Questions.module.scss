@@ -1,0 +1,89 @@
+.wrapper {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: black;
+  position: relative;
+  z-index: 5;
+}
+
+
+.quizTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: var(--white);
+}
+
+
+.quizBlock {
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.test {
+  background: red;
+}
+
+
+.orangeSquare {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bcg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.secondStepWrapper {
+  max-width: 446px;
+  width: 100%;
+}
+
+.accordionItem {
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .quizTitle {
+    text-align: center;
+  }
+  .accordionContainer {
+    gap: 20px;
+  }
+}

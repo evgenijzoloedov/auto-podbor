@@ -1,0 +1,47 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imgContainer{
+  position: relative;
+  margin-right: 7px;
+  width:50px;
+  height: 50px;
+}
+.imgBcg{
+  position: absolute;
+}
+.imgPerson{
+  position: absolute;
+}
+
+.textContent{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 113.7%;
+  text-align: right;
+  color: var(--gray-title);
+  white-space: nowrap;
+}
+.black{
+  color: var(--gray-title);
+}
+
+.white{
+  color:var(--white);
+}
+.orderNumber{
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 113.7%;
+  text-align: right;
+  text-decoration-line: underline;
+  color:var(--orange);
+}

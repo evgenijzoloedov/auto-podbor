@@ -1,0 +1,219 @@
+.main{
+  position: relative;
+  overflow-x: hidden;
+}
+.bcgImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 1410px;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pluses{
+  margin-right: 40px;
+  background: #FFFFFF;
+  box-shadow: -1px 4px 21px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  gap:33px;
+  padding:16px;
+  max-width: 213px;
+  margin-bottom: 30px;
+}
+
+.plus{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 113.7%;
+  color: var(--gray-primary);
+}
+.text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--gray-secondary);
+}
+
+.mainTitleBlock{
+  max-width: 556px;
+  width: 100%;
+  margin-right: auto;
+}
+.mainTitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: var(--gray-primary);
+  margin-bottom: 16px;
+}
+
+.orange{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: var(--orange);
+}
+
+.bold{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 125%;
+  color: black;
+}
+
+.mb32{
+  margin-bottom: 32px;
+}
+
+.mw406{
+  max-width: 406px;
+  width: 100%;
+}
+
+.moneyBlock{
+  max-width: 311px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+  padding: 3px 14px;
+  background: #FFFFFF;
+  box-shadow: -1px 4px 21px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  margin-bottom: 64px;
+  & > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: var(--gray-secondary);
+    margin: 0;
+  }
+}
+
+
+.people{
+  margin-left: auto;
+  object-fit: cover;
+  height: 590px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.cloud{
+  //overflow-x: hidden;
+  position: relative;
+
+  //background: white;
+  min-height: 200px;
+  max-height: 200px;
+  //width: 100%;
+  margin-top: 75px;
+  &>img{
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    //object-fit: contain;
+  }
+}
+
+.button{
+  background: inherit;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.plusesDesktop{
+  display: block;
+}
+
+.plusesMobile{
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px){
+  .people{
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .people{
+    height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .bcgImage{
+    object-fit: none;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+  .plusesDesktop{
+    display: none;
+  }
+
+  .plusesMobile{
+    display: block;
+    padding: 0 15px;
+    margin-top: -100px;
+    z-index: 100;
+    margin-bottom: 90px;
+  }
+  .moneyBlock{
+    margin-bottom: 0;
+  }
+  .button{
+    >img{
+      width: 300px;
+    }
+
+  }
+
+  .pluses{
+    max-width: 100%;
+    margin: 0;
+  }
+  .cloud{
+    z-index: -1;
+  }
+}

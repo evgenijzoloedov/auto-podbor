@@ -1,0 +1,29 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:13px;
+}
+
+.indicator{
+  border-radius: 50%;
+  width:8px;
+  height: 8px;
+  background: var(--green);
+  margin-right: 8px;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  color:var(--gray-title);
+}
+
+
+
+@media screen and (max-width: 1070px){
+  .indicator{
+    display: none;
+  }
+}

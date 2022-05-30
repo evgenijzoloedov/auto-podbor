@@ -1,0 +1,23 @@
+
+
+.link{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 113.7%;
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:9px;
+  &:hover{
+    color:var(--white);
+  }
+}
+
+
+@media screen and (max-width:576px){
+  .link{
+    margin-bottom: 35px;
+  }
+}

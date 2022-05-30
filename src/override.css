@@ -1,0 +1,126 @@
+.accordion-button:focus{
+    border-color: inherit;
+    box-shadow: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background: inherit;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+
+button:focus:not(:focus-visible){
+    outline:inherit ;
+}
+/*.breadcrumb-divider: quote(">");*/
+.breadcrumb-item+.breadcrumb-item::before{
+    content:">"
+}
+.breadcrumb{
+    background: var(--white);
+}
+
+.modal-content{
+    background: rgba(119, 119, 119, 0.01);
+    opacity: 0.95;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    box-sizing: border-box;
+    backdrop-filter: blur(150px);
+
+    border-radius: 11px;
+}
+
+.rc-pagination{
+    display: flex;
+    flex-direction: row;
+}
+.rc-pagination-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    width: 45px!important;
+    height: 45px!important;
+    border-radius: 50%;
+    position: relative;
+}
+.rc-pagination-jump-next,.rc-pagination-jump-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.rc-pagination-jump-next button,.rc-pagination-jump-prev button{
+    color:white;
+}
+
+.rc-pagination-item a{
+    position: absolute;
+    /*top: 7px;*/
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 3px 10px;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+    text-align: center;
+
+    color: #000000;
+}
+.rc-pagination-item:hover{
+    border: inherit;
+    background: black;
+    color: white;
+}
+
+.rc-pagination-item-active{
+    border-color: none;
+    color: white;
+    background: linear-gradient(109.36deg, #000000 0%, #282828 100%);
+}
+
+.modal-backdrop.show{
+    opacity: 0.7;
+}
+
+.modal-content{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.rec-dot{
+    display: none!important;
+}
+
+@media screen and (max-width: 980px){
+    .rec-dot{
+        display: block!important;
+        /*background: radial-gradient(46.55% 119.48% at 49.96% 52.73%, #282828 0%, #000000 100%)!important;*/
+        border-image:   linear-gradient(180deg, #FCC026 0%, #FC8B26 100%)!important;
+        box-shadow: 0 0 1px 2px #FCC026!important;
+    }
+    .rec-dot_active{
+        box-shadow: none!important;
+        background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%)!important;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .rc-pagination-item{
+        margin-top: 10px;
+        height: 25px!important;
+        width: 25px!important;
+    }
+    .rc-pagination-jump-next,.rc-pagination-jump-prev{
+        margin-top: 10px;
+    }
+}

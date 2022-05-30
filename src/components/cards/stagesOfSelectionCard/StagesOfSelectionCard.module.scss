@@ -1,0 +1,51 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  max-width: 350px;
+  width: 100%;
+}
+.imgContainer{
+  position: relative;
+}
+
+.img{
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex:1 0 auto;
+  padding: 13px;
+  background: var(--header-bcg);
+
+}
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--gray-title);
+}
+
+.text{
+  margin:0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  color: var(--gray-secondary);
+  b{
+    color: black;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .card{
+    max-width: 100%;
+  }
+}

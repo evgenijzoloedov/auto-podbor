@@ -1,0 +1,30 @@
+.text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  color: var(--gray-title);
+  &:hover{
+    color: var(--gray-title);
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:13px
+}
+
+
+
+.black{
+  color: var(--gray-title);
+  &:hover{
+    color: var(--gray-title);
+  }
+}
+
+.white{
+  color: var(--white);
+  &:hover{
+    color: var(--white);
+  }
+}

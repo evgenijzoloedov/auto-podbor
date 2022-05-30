@@ -1,0 +1,159 @@
+.card {
+  min-width: 330px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex:1 0 auto;
+}
+
+.mb56 {
+  margin-bottom: 56px;
+}
+
+.circleOut {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: -1px 4px 21px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -45px;
+  margin-bottom: -5px;
+}
+
+.circleIn {
+  height: 110px;
+  width: 110px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  box-sizing: border-box;
+
+}
+
+.content {
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  flex:1 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title {
+  flex:1 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 129.7%;
+  text-align: center;
+  color: var(--gray-primary);
+  margin-bottom: 10px;
+}
+
+.text {
+  flex:1 0 auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--gray-secondary);
+  margin-bottom: 34px;
+}
+
+
+.price {
+  width: 137%;
+  background: linear-gradient(177.42deg, #000000 0%, #3E3E3E 100%);
+  padding: 12px 20px;
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 129.7%;
+  text-align: center;
+  color: var(--white);
+}
+
+
+.priceNumber {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  /* identical to box height, or 50px */
+
+
+  /* main_gradient */
+
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+
+}
+
+.button {
+  padding: 8px 30px !important;
+  margin-bottom: 15px;
+}
+
+.more {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 113%;
+  /* or 17px */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray-secondary);
+  margin-bottom: 41px;
+}
+
+
+//@media screen and (max-width: 576px){
+//  .card{
+//    min-width: 156px;
+//    max-width: 156px;
+//  }
+//
+//  .price{
+//    width: 100%;
+//    font-size: 16px;
+//  }
+//
+//  .priceNumber{
+//    font-size: 25px;
+//  }
+//
+//  .button{
+//    font-style: normal;
+//    font-weight: 500;
+//    font-size: 14px;
+//    line-height: 113%;
+//    display: flex;
+//    align-items: center;
+//    text-align: center;
+//    text-transform: uppercase;
+//    color: #121212;
+//  }
+//}

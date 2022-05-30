@@ -1,0 +1,33 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.shadow{
+  margin: 20px 0 5px;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 113.7%;
+  /* or 18px */
+
+  text-align: center;
+  color: var(--gray-primary);
+  margin-bottom: 8px;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  /* or 21px */
+
+  text-align: center;
+  color: var(--gray-secondary);
+}

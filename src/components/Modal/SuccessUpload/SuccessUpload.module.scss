@@ -1,0 +1,137 @@
+.modal{
+  z-index: 10;
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(119, 119, 119, 0.01);
+  opacity: 0.95;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  box-sizing: border-box;
+  backdrop-filter: blur(150px);
+
+  border-radius: 11px;
+}
+
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+  color: var(--white);
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+
+.subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.phoneNumber{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  background: linear-gradient(180deg, #FCC026 0%, #FC8B26 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 35px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
+
+.fields{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+.disclaimer{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--white);
+}
+
+.btn{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+
+  color: #000000;
+  height: 60px;
+  margin: 40px 0 11px;
+}
+
+.img{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  width: 265px;
+  margin-left: -124px;
+  margin-top: -143px;
+}
+
+.close{
+  z-index: 50;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.desc{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  color:var(--white);
+}
+
+
+.simpleText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  color:var(--white);
+}
+
+.href{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px){
+  .modal{
+    padding-top:70px;
+  }
+}
